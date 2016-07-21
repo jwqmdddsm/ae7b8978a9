@@ -9,7 +9,7 @@ sudo dpkg -i cf.deb
 cf install-plugin -f https://coding.net/u/tprss/p/bluemix-source/git/raw/master/ibm-containers-linux_x64 
 
 # Set Parameters
-sv_region=eu-gb
+sv_region=$1
 sv_port=443
 passwd=`openssl rand -base64 12`
 method=chacha20
